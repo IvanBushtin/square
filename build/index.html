@@ -3,8 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
@@ -14,8 +12,8 @@
     <title>Square</title>
 </head>
 <body>
-<header>
-    <div class="container p-0">
+<header class="header">
+    <div class="container">
         <nav>
             <div class="hamburger" id="openMenu">
                 <span class="hamburger-item hamburger-top"></span>
@@ -51,12 +49,12 @@
                                     <a href="#" class="third-menu-link">gallary /4</a>
                                 </li>
                                 <li class="third-menu-item">
-                                    <a href="#" class="third-menu-link">gallary /5</a>
+                                    <a href="#" class="third-menu-link border-none">gallary /5</a>
                                 </li>
                             </ul>
                         </li>
                         <li class="second-menu-item">
-                            <a href="#" class="second-menu-link">personal</a>
+                            <a href="#" class="second-menu-link border-none">personal</a>
                         </li>
                     </ul>
                 </li>
@@ -85,15 +83,87 @@
         <a href="index.html" class="logo"><img src="img/square_logo.png" alt="logo"></a>
     </div>
 </header>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+<div class="portfolio-slider">
+    <div class="container">
+        <div class="portfolio-wrapper">
+            <img src="img/index-photo.png" alt="photo">
+            <div class="info-popup">
+                <a href="#" class="wide"><i class="fas fa-location-arrow"></i></a>
+                <h2 class="portfolio-header">morgan freeman</h2>
+                <span class="portfolio-header-caption">actor</span>
+                <div class="middle-block">
+                    <p class="portfolio-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+                        fringilla mi orci, ac venenatis
+                        ante venenatis eget.
+                    </p>
+                    <div>
+                        <div class="pointer"><a href="#"><i class="fas fa-angle-left"></i></a></div>
+                        <div class="pointer"><a href="#"><i class="fas fa-angle-right"></i></a></div>
+                        <span class="count">1/10</span>
+                    </div>
+                </div>
+                <div class="action">
+                    <a href="#"><i class="fas fa-heart"></i></a>
+                    <a href="#"><i class="fas fa-share"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bottom">
+    <div class="bottom-wrapper container">
+        <div class="bottom-box-1">
+            <div><img src="img/photo.png" alt="photo"></div>
+            <div>
+                <h3>fashion workshop</h3>
+                <span>nov 21-23</span>
+                <span>9:00am - 4:00pm</span>
+                <a href="#">rsvp</a>
+            </div>
+        </div>
+        <div class="bottom-box-2">
+            <h4 class="bottom-box-2-header">news</h4>
+            <div class="bottom-box-2-news">
+                <img src="img/news-box-photo-1.png" alt="photo">
+                <div class="bottom-box-2-news-text">
+                    <h6>new gallery set</h6>
+                    <span>09.12.2014</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla mi orci, ac venenatis
+                        ante
+                        venenatis eget.</p>
+                </div>
+            </div>
+            <div class="bottom-box-2-news news-margin">
+                <img src="img/news-box-photo-2.png" alt="photo">
+                <div class="bottom-box-2-news-text">
+                    <h6>wedding workshop</h6>
+                    <span>09.12.2014</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla mi orci, ac venenatis
+                        ante
+                        venenatis eget.</p>
+                </div>
+            </div>
+            <div class="bottom-box-2-news">
+                <img src="img/news-box-photo-3.png" alt="photo">
+                <div class="bottom-box-2-news-text">
+                    <h6>Personal Project</h6>
+                    <span>09.12.2014</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla mi orci, ac venenatis
+                        ante
+                        venenatis eget.</p>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-box-3">
+            <div>
+                <img src="" alt="">
+                <div></div>
+            </div>
+            <div></div>
+        </div>
+    </div>
+</div>
 <script src="js/script.js"></script>
 </body>
 </html>
