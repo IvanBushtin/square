@@ -6,6 +6,9 @@
 
 .portfolio-wrapper {
   position: relative;
+  .portfolio-image {
+    width: 100%;
+  }
 }
 
 .info-popup {
