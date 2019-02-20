@@ -5,9 +5,11 @@
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
+  padding: 60px 0 90px;
 }
 
 .bottom-box-1 {
+  margin-right: 30px;
   background-color: #000;
   color: #fff;
   text-transform: uppercase;
@@ -29,6 +31,11 @@
     padding: 30px 15px;
     background-color: #c3a000;
   }
+}
+
+.bottom-box-2 {
+  max-width: 350px;
+  width: 100%;
 }
 
 .bottom-box-2-header {
@@ -87,6 +94,10 @@
 
     a {
       color: $text-color;
+
+      &:hover {
+        color: $hover-color;
+      }
     }
 
     .bottom-box-3-post {
@@ -96,7 +107,19 @@
 
   .bottom-box-3-twit {
     max-width: 314px;
-    margin: 0 auto;
+    margin: 80px auto 0;
     text-align: center;
+
+    a {
+      color: #000;
+
+      &:hover {
+        color: $hover-color;
+      }
+    }
+
+    p {
+      color: $hover-color;
+    }
   }
 }

@@ -35,7 +35,13 @@ gulp.task("html", function () {
 		.pipe(browserSync.reload({stream: true}))
 });
 
-gulp.task("watch", [ 'sass', "html", 'img', 'fonts', 'js'], function () {
+gulp.task("php", function () {
+	return gulp.src("assets/**/*.php")
+		.pipe(gulp.dest("build"))
+		.pipe(browserSync.reload({stream: true}))
+});
+
+gulp.task("watch", [ 'sass', "html", 'img', 'fonts', 'js', 'php'], function () {
 	browserSync.init({
 		server: "./build",
 		notify: false,
@@ -48,4 +54,5 @@ gulp.task("watch", [ 'sass', "html", 'img', 'fonts', 'js'], function () {
 	gulp.watch('assets/img/**/*', ["img"]);
     gulp.watch('assets/fonts/**/*', ["fonts"]);
     gulp.watch('assets/js/**/*', ["js"]);
+	gulp.watch('assets/**/*.php' , ['php']);
 });

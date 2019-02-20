@@ -1,2 +1,19 @@
 @import "variables";
 
+.footer-box {
+  max-width: 220px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 45px;
+
+  span {
+    display: block;
+    color: #000;
+    font: 700 13px $second-font;
+
+    &:last-child {
+      margin-top: 60px;
+    }
+  }
+}

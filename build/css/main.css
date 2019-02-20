@@ -204,9 +204,11 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding: 60px 0 90px; }
 
 .bottom-box-1 {
+  margin-right: 30px;
   background-color: #000;
   color: #fff;
   text-transform: uppercase;
@@ -222,6 +224,10 @@ nav {
     margin: 30px auto 20px;
     padding: 30px 15px;
     background-color: #c3a000; }
+
+.bottom-box-2 {
+  max-width: 350px;
+  width: 100%; }
 
 .bottom-box-2-header {
   max-width: 165px;
@@ -264,9 +270,66 @@ nav {
       margin-right: 25px; }
     .bottom-box-3 .bottom-box-3-contact-info a {
       color: #362f2f; }
+      .bottom-box-3 .bottom-box-3-contact-info a:hover {
+        color: #f3c90c; }
     .bottom-box-3 .bottom-box-3-contact-info .bottom-box-3-post {
       margin: 11px 0 25px; }
   .bottom-box-3 .bottom-box-3-twit {
     max-width: 314px;
-    margin: 0 auto;
+    margin: 80px auto 0;
     text-align: center; }
+    .bottom-box-3 .bottom-box-3-twit a {
+      color: #000; }
+      .bottom-box-3 .bottom-box-3-twit a:hover {
+        color: #f3c90c; }
+    .bottom-box-3 .bottom-box-3-twit p {
+      color: #f3c90c; }
+
+.partners {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 95px; }
+
+.footer-box {
+  max-width: 220px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 45px; }
+  .footer-box span {
+    display: block;
+    color: #000;
+    font: 700 13px "Open Sans", sans-serif; }
+    .footer-box span:last-child {
+      margin-top: 60px; }
+
+.portfolio {
+  padding-bottom: 105px; }
+  .portfolio__pointer {
+    margin-top: 30px;
+    margin-right: 10px;
+    float: right; }
+
+.portfolio-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: #362f2f;
+  text-transform: uppercase;
+  font: 300 18px "Roboto Condensed", sans-serif; }
+  .portfolio-gallery .image-wrapper {
+    max-width: 390px;
+    max-height: 390px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; }
+    .portfolio-gallery .image-wrapper img {
+      width: 100%;
+      height: 100%; }
+  .portfolio-gallery .portfolio-gallery-box {
+    box-sizing: border-box;
+    padding: 140px 0 175px 20px; }
+    .portfolio-gallery .portfolio-gallery-box h1 {
+      font-size: 24px;
+      font-weight: 400; }

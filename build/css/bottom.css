@@ -2,9 +2,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding: 60px 0 90px; }
 
 .bottom-box-1 {
+  margin-right: 30px;
   background-color: #000;
   color: #fff;
   text-transform: uppercase;
@@ -20,6 +22,10 @@
     margin: 30px auto 20px;
     padding: 30px 15px;
     background-color: #c3a000; }
+
+.bottom-box-2 {
+  max-width: 350px;
+  width: 100%; }
 
 .bottom-box-2-header {
   max-width: 165px;
@@ -62,9 +68,17 @@
       margin-right: 25px; }
     .bottom-box-3 .bottom-box-3-contact-info a {
       color: #362f2f; }
+      .bottom-box-3 .bottom-box-3-contact-info a:hover {
+        color: #f3c90c; }
     .bottom-box-3 .bottom-box-3-contact-info .bottom-box-3-post {
       margin: 11px 0 25px; }
   .bottom-box-3 .bottom-box-3-twit {
     max-width: 314px;
-    margin: 0 auto;
+    margin: 80px auto 0;
     text-align: center; }
+    .bottom-box-3 .bottom-box-3-twit a {
+      color: #000; }
+      .bottom-box-3 .bottom-box-3-twit a:hover {
+        color: #f3c90c; }
+    .bottom-box-3 .bottom-box-3-twit p {
+      color: #f3c90c; }
